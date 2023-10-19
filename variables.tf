@@ -1,18 +1,10 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+variable "prefix" {
+  description = "The prefix used for all resources in this example"
+}
+
 variable "location" {
-    description = "Location of the network"
-    default     = "eastus"
-}
-
-variable "username" {
-    description = "Username for Virtual Machines"
-    default     = "azureuser"
-}
-
-variable "password" {
-    description = "Password for Virtual Machines"
-}
-
-variable "vmsize" {
-    description = "Size of the VMs"
-    default     = "Standard_DS1_v2"
+  description = "The Azure location where all resources in this example should be created"
 }
